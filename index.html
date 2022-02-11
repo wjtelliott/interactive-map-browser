@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William's Interactive Map!</title>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Link leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="./resources/main.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Interactive Map</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </header>
+
+        <aside id="locationAside">
+            <h2>Locations:</h2>
+            <p>Click the checkboxes to choose which locations to add:</p>
+            <div id="locationBoxContainer">
+                
+            </div>
+            <hr>
+            <div id="resultInfo"></div>
+        </aside>
+
+        <main id="mapContainer">
+            <h3>Your Current GeoLocation:</h3>
+            <div id="map"></div>
+            <p id="loadingInfo">LOADING</p>
+            
+        </main>
+
+        <div id="errorInfo">
+            <p>Webpage was not allowed GeoLocation permissions.<br>Please refresh with permissions to use your location.</p>
+        </div>
+
+        <footer>
+            <h4>Footer Stuff Here:</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos tempore earum quisquam odio, veniam fuga id debitis voluptatem commodi, magnam nihil nobis harum culpa ullam fugiat. Veniam, iste facilis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maxime, nesciunt culpa error quia eaque mollitia facere aperiam architecto facilis! Reprehenderit tempore magni beatae amet consequuntur cupiditate non fugit dolore.</p>
+        </footer>
+    </div>
+
+    <!--Link JS last-->
+    <script src="./resources/index.js"></script>
+</body>
+</html>
